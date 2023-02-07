@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Responsive CSS */
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Order Information</h3>
+      <p>
+        Hi <%= userName %>,<br />
+        Your order has been received and is being processed.<br />
+        Order ID: <%= order.orderId %><br />
+        Product Name: <%= order.productName %><br />
+        Product Cost: <%= order.productCost %><br />
+        Date and Time: <%= order.dateTime %><br />
+        Total Cost: <%= order.totalCost %><br />
+        Shipping Address: <%= userAddress %><br />
+      </p>
+      <p>
+        Thank you for shopping with us at dailyshop.com!<br />
+        If you have any questions, please contact us at +91 9876543210.<br />
+        Our address is:<br />
+        Ground Floor, Eros Plaza, Eros Corporate Centre, Nehru Place, New Delhi-110019
+      </p>
+    </div>
+  </body>
+</html>
