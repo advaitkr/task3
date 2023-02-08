@@ -11,7 +11,7 @@ const orderSchema = new Schema({
         required: true,
     },
     date: {
-        type:date.now(),
+        type:String,
         required: true,
     },
     totalCost:{
